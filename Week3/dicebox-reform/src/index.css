@@ -1,0 +1,19 @@
+body {
+  color: "black";
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.diceBox {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: ;
+}   
+
+button {
+ grid-column: 3 / span 1;
+  text-align: center;
+  width: 100;
+  font-size: 25px;
+}
