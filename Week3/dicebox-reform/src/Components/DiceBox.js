@@ -15,10 +15,10 @@ class DiceBox extends React.Component {
 
                 num5: 0,
         }
-        this.handleClick = this.handleClick.bind(this)
+        
     }
 
-    handleClick() {
+    handleClick = () => {
         this.setState({
                 num1: Math.floor(Math.random() * 6),
                 num2: Math.floor(Math.random() * 6),
