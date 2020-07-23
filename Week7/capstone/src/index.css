@@ -1,0 +1,488 @@
+body {
+  background-color: black;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  clear: both;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+div.nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+}
+
+
+div.nav > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div.nav > ul > li {
+  float: left;
+}
+
+
+div.nav > ul > li a:hover {
+  background-color: #111;
+}
+
+.nav {
+  font-size: 25px;
+  margin-top: 0;
+  font-weight: bold;
+  border: white 2px solid;
+  margin-bottom: 15px;
+  
+}
+
+div.addTweet > form > input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white
+}
+
+div.addTweet > form > input.author {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.addTweet > form > input.tweetBubble {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+div.addTweet > form > button:hover {
+  border: 2px double white
+}
+
+div.addTweet > form > input[type=text]:focus {
+  border: 3px solid white;
+}
+
+div.addTweet > form > input[type=number]:focus {
+  border: 3px solid white;
+}
+
+div.addTweet > form > button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+div.tweet > form > input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white
+}
+
+div.tweet > form > button:hover {
+  border: 2px double white
+}
+
+div.tweet > form > input[type=text]:focus {
+  border: 3px solid white;
+}
+
+div.tweet > form > input[type=number]:focus {
+  border: 3px solid white;
+}
+
+
+div.tweet > form > input[type=number], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white
+}
+
+div.tweet > form > button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+div.tweet > form > input::placeholder{
+  color: red
+}
+
+::placeholder {
+  color: red
+}
+
+.tweetContain {
+  display:  grid;
+  grid-template-columns: auto auto auto auto;
+  color: white;
+  justify-items: center;
+  align-items: center;
+}
+
+.header {
+  grid-column: span 4;
+  font-size: 80px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: red;
+  
+}
+
+.tweet {
+  grid-column: span 4;
+  border: white solid 2px;
+  padding: 0px;
+  width: 95%;
+  text-align: center;
+  
+}
+
+.tweetBorder {
+  border: red 2px groove;
+  margin: 0;
+}
+
+.authorPos {
+  text-align: end;
+  padding-right: 30px;
+}
+
+.addTweetButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+button.addTweetButton:hover {
+  color: red;
+  font-size: 60px;
+  transition: ease-in 3s;
+  
+}
+
+div.tweet > button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 50%;
+  font-weight: bold;
+}
+
+button.delete:hover {
+  color: red;
+  border: 2px double white
+}
+
+
+button.edit:hover {
+  border: 2px double white
+}
+
+
+.bold {
+  font-weight: bolder;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  
+  div.nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+  }
+  
+  
+  div.nav > ul > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  div.nav > ul > li {
+    float: left;
+  }
+
+  div.nav > ul > li.floatRight {
+    float: right;
+  }
+  
+  
+  
+  div.nav > ul > li a:hover {
+    background-color: black;
+  }
+  
+  .nav {
+    font-size: 25px;
+    margin-top: 0;
+    font-weight: bold;
+    border: white 2px solid;
+    margin-bottom: 15px;
+    
+  }
+  
+  div.addTweet > form > input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white
+  }
+  
+  div.addTweet > form > input.author {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  div.addTweet > form > input.tweetBubble {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  
+  div.addTweet > form > button:hover {
+    border: 2px double white
+  }
+  
+  div.addTweet > form > input[type=text]:focus {
+    border: 3px solid white;
+  }
+  
+  div.addTweet > form > input[type=number]:focus {
+    border: 3px solid white;
+  }
+  
+  div.addTweet > form > button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 25px;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  div.tweet > form > input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white
+  }
+  
+  div.tweet > form > button:hover {
+    border: 2px double white
+  }
+  
+  div.tweet > form > input[type=text]:focus {
+    border: 3px solid white;
+  }
+  
+  div.tweet > form > input[type=number]:focus {
+    border: 3px solid white;
+  }
+  
+  
+  div.tweet > form > input[type=number], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white
+  }
+  
+  div.tweet > form > button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  div.tweet > form > input::placeholder{
+    color: red
+  }
+  
+  ::placeholder {
+    color: red
+  }
+  
+  .tweetContain {
+    display:  grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .header {
+    grid-column: span 4;
+    font-size: 15vw;
+    margin: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    
+  }
+  
+  .tweet {
+    grid-column: span 4;
+    border: white solid 2px;
+    padding: 0px;
+    width: 95%;
+    text-align: center;
+    
+  }
+  
+  .tweetBorder {
+    border: red 2px groove;
+    margin: 0;
+  }
+  
+  .authorPos {
+    text-align: end;
+    padding-right: 30px;
+  }
+  
+  .addTweetButton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  button.addTweetButton:hover {
+    color: red;
+    font-size: 60px;
+    transition: ease-in 3s;
+    
+  }
+  
+  div.tweet > button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    width: 50%;
+    font-weight: bold;
+  }
+  
+  button.delete:hover {
+    color: red;
+    border: 2px double white
+  }
+  
+  
+  button.edit:hover {
+    border: 2px double white
+  }
+  
+  
+  .bold {
+    font-weight: bolder;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: red;
+  }
+}
+
+
+
+
